@@ -559,7 +559,7 @@ class Model extends \Orm\Model {
 		{
 			return false;
 		}
-		elseif ( ! is_null($this->configuration['tree_field']) and ( ! is_numeric($this->{$this->configuration['tree_field']}) or $this->{$this->configuration['tree_field']} <=0  ) )
+		elseif ( ! is_null($this->configuration['tree_field']) and ( is_numeric($this->{$this->configuration['tree_field']}) and $this->{$this->configuration['tree_field']} <=0  ) )
 		{
 			return false;
 		}
