@@ -18,7 +18,7 @@ namespace Nestedsets;
 /*
  * Make sure the ORM package is loaded
  */
-\Fuel::add_package('orm');
+\Package::load('orm');
 
 /**
  * Model class.
